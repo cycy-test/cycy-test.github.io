@@ -32,8 +32,8 @@ body {
     margin: .25rem !important;
 }
 /* Fixes an issue with scrolling while having a Fixed-top collapsed navbar open.*/
-nav.navbar.fixed-top {
-    max-height: 100%;
+nav.navbar.fixed-top .dropdown-menu {
+    max-height: 50vh;
     overflow-y: auto;
 }
 
@@ -59,24 +59,7 @@ nav.navbar.fixed-top {
 }
 /*_Header.erb*/
 .navbar {
-    margin-top: -20px;
     background-color: #7E11dE /*#9013FE is too light, #360166 is too dark, so we go in between-ish*/
-}
-.navbar button {
-    background-color: #360166;
-    font-weight: bold;
-}
-.navbar > div{
-    padding-top: 20px;
-}
-.navbar > .container > .row > div:nth-child(1) {
-    margin-top: 5px;
-}
-.navbar > .container > .row > div:nth-child(2) {
-    margin-top: 13px;
-}
-.navbar > .container > .row > div:nth-child(3) {
-    margin-top: 23px;
 }
 /*----End _header.erb----*/
 
@@ -163,10 +146,10 @@ nav.navbar.fixed-top {
     padding-top: 140px;
 }
 .contact .row div:nth-child(1) {
-    padding-top: 5vh; 
+    padding-top: 5vh;
 }
 .contact .row div:nth-child(3) {
-    padding-top: 30px; 
+    padding-top: 30px;
 }
 /*----End Contact.htm----*/
 
@@ -324,11 +307,11 @@ nav.navbar.fixed-top {
 /*div.dropdown a {
     text-decoration:none;
   }
-  
+
   div.dropdown a.dropdown-header {
     color:black !important;
   }
-  
+
   div.footer_placeholder a {
     text-decoration:none;
     font-weight:normal;
